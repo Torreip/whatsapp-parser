@@ -1,12 +1,13 @@
 from datetime import datetime
-import message
 
-class ParserFacebook():
+from . import message
 
-    ''' A line is a dict object in this format:
+
+class ParserFacebook:
+    """ A line is a dict object in this format:
     {u'message': u'text text', u'from': u'Username One', u'id':
         u'3294659605566648_1432085429', u'datetime': u'2015-05-20T01:30:29+0000'}
-    '''
+    """
 
     def __init__(self, raw_messages):
         self.raw_messages = raw_messages
